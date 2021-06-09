@@ -1,0 +1,399 @@
+.menu-icon {
+  align-self: center;
+  margin-right: 12px;
+  fill: #dbd8d7;
+}
+
+nav,
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+}
+
+main {
+  background-image: url("illustration.png");
+  flex-direction: column;
+  background-color: #1c1a19;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 280px;
+  padding-bottom: 150px;
+}
+
+h1,
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.list-item {
+  list-style: none;
+}
+
+svg {
+  fill: #dbd8d7;
+  margin-right: 20px;
+}
+
+.menu-icon:hover,
+.list-item:hover svg {
+  fill: #ff6b00;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+ul {
+  display: flex;
+  padding-left: 16px;
+  margin-top: 0;
+}
+
+h1 {
+  margin-top: 120px;
+  color: #ff6b00;
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-family: "Crete Round", serif;
+}
+
+.description {
+  font-size: 24px;
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+
+nav {
+  background-color: #3c3a39;
+}
+
+.text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.john,
+.description {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.john {
+  font-size: 18px;
+}
+
+.card {
+  width: 327px;
+  height: 386px;
+  background-image: url(background.png);
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.card-header {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  padding: 84px 16px 0;
+  margin: 0;
+}
+
+.card-body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-top: 12px;
+  color: white;
+  padding-left: 16px;
+  width: 295px;
+  height: 87px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.lang {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.24);
+  margin-right: 12px;
+}
+
+.see-project {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  width: 100px;
+  height: 48px;
+  background-color: #ff6b00;
+  color: white;
+  text-decoration: none;
+  padding: 15px 113.5px;
+}
+
+.see-project:hover {
+  color: #1c1a19;
+}
+
+.lang a {
+  text-decoration: none;
+  padding: 10px 12px;
+  color: white;
+}
+
+.lang1 a {
+  text-decoration: none;
+  color: #091e42;
+}
+
+.lang:hover a {
+  color: #ff6b00;
+  background-color: white;
+}
+
+.works {
+  margin: 0 auto;
+  width: 375px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+}
+
+.about-me-main {
+  width: 375px;
+  height: 1901px;
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  background-image: url(illustration_2.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position-x: 650%;
+  background-position-y: 21%;
+  margin: 0 auto;
+  position: relative;
+  top: 28px;
+}
+
+.about-me-title {
+  font-family: "Crete Round", serif;
+  font-size: 72px;
+  font-weight: 400;
+  color: #ff6b00;
+  margin-left: 24px;
+  margin-top: 120px;
+  margin-bottom: -10px;
+}
+
+.about-me-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f4f5f7;
+  margin-left: 24px;
+}
+
+.get-resume {
+  background-color: #ff6b00;
+  width: 161px;
+  height: 48px;
+  margin-left: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.get-resume:hover {
+  color: #ff6b00;
+  background-color: white;
+}
+
+.ruler2 {
+  width: 90%;
+  background-color: #fff;
+  height: 1px;
+  position: relative;
+  top: 200px;
+}
+
+.ruler {
+  width: 90%;
+  background-color: #000;
+  height: 1px;
+  position: relative;
+  top: 90px;
+}
+
+li {
+  margin-top: 32px;
+}
+
+.see-project1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  width: 124px;
+  height: 48px;
+  background-color: #ff6b00;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 16px;
+  margin-bottom: 12px;
+}
+
+.lang1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  list-style: none;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  justify-content: space-between;
+  padding: 5px;
+  color: #ff5a5a;
+  margin: 10px;
+  position: relative;
+  top: 90px;
+  right: 5px;
+}
+
+.card-body1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-top: 12px;
+  color: #091e42;
+  padding-left: 16px;
+  line-height: 24px;
+  position: relative;
+  top: 100px;
+}
+
+.card-header2 {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #1c1a19;
+  position: relative;
+  top: 80px;
+}
+
+.card-header3 {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #08152c;
+  position: relative;
+  top: 140px;
+  left: 16px;
+}
+
+.card-primary {
+  background-image: none;
+}
+
+.stretch {
+  position: relative;
+  top: 150px;
+}
+
+.see-project2 {
+  position: relative;
+  top: 90px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  background-color: #ff6b00;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  height: 48px;
+  padding: 7px 1px;
+  left: 10px;
+  text-align: center;
+}
+
+.down {
+  position: relative;
+  top: 150px;
+}
+
+.doubledown {
+  position: relative;
+  top: 250px;
+}
+
+.pad-bottom {
+  padding-bottom: 28px;
+}
+
+.lists {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  list-style: none;
+  text-align: center;
+}
+
+.list-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.diamond {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  left: 98px;
+  top: 275px;
+}
+
+.square {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  left: 78px;
+  top: 615px;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  left: 131px;
+  top: 1014px;
+}
+
+.down {
+  position: relative;
+  top: 150px;
+}
