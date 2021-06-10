@@ -1,5 +1,5 @@
 # Portfolio: setup and mobile version skeleton
-  Building the first page of my portfolio using Flexbox
+  Building the first page of my portfolio using Flexbox and Grid
 
 ![screenshot](./screenshot.png)
 
