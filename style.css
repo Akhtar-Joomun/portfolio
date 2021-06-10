@@ -170,19 +170,10 @@ nav {
   background-color: white;
 }
 
-.lang1:hover {
-  background-color: #ff5a5a;
-}
-
-.lang1 a:hover {
-  background-color: #ff5a5a;
-  color: white;
-}
-
 .works {
   margin: 0 auto;
   width: 360px;
-  background-color: rgb(113, 99, 99);
+  background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-rows: 2.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
   row-gap: 30px;
@@ -291,6 +282,15 @@ li {
   position: relative;
   top: 120px;
   right: 28px;
+}
+
+.lang1:hover {
+  background-color: #ff5a5a;
+}
+
+.lang1 a:hover {
+  background-color: #ff5a5a;
+  color: white;
 }
 
 .card-body1 {
@@ -408,9 +408,4 @@ li {
   position: relative;
   left: 131px;
   top: 1014px;
-}
-
-.down {
-  position: relative;
-  top: 150px;
 }
