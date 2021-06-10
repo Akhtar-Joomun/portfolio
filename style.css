@@ -14,7 +14,7 @@ nav,
 }
 
 .main-page {
-  background-image: url("illustration.png");
+  background-image: url("images/illustration.png");
   flex-direction: column;
   background-color: #1c1a19;
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@ nav {
 .card {
   width: 327px;
   height: 386px;
-  background-image: url(background.png);
+  background-image: url(images/background.png);
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -185,7 +185,7 @@ nav {
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
-  background-image: url(illustration_2.png);
+  background-image: url(images/illustration_2.png);
   background-repeat: no-repeat;
   background-size: 90%;
   background-position-x: 650%;
@@ -224,7 +224,6 @@ nav {
   text-decoration: none;
   color: white;
   text-align: center;
-  padding-top: 25px;
 }
 
 .get-resume:hover {
