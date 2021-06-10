@@ -25,7 +25,8 @@ nav,
 
 h1,
 h2,
-p {
+.text,
+.john {
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -100,7 +101,7 @@ nav {
   margin: 0 auto;
   padding-bottom: 24px;
   position: relative;
-  right: 7px;
+  right: 8px;
 }
 
 .card-header {
@@ -175,7 +176,7 @@ nav {
   width: 360px;
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-template-rows: 2.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2.2fr 1fr 1fr 1fr 1fr 1fr 1.07fr;
   row-gap: 30px;
 }
 
@@ -191,8 +192,6 @@ nav {
   background-position-x: 650%;
   background-position-y: 21%;
   margin: 0 auto;
-  position: relative;
-  top: 28px;
 }
 
 .about-me-title {
@@ -224,6 +223,7 @@ nav {
   text-decoration: none;
   color: white;
   text-align: center;
+  margin-top: 20px;
 }
 
 .get-resume:hover {
@@ -244,7 +244,7 @@ nav {
   background-color: #000;
   height: 1px;
   position: relative;
-  top: 100px;
+  top: 120px;
 }
 
 li {
@@ -276,19 +276,18 @@ li {
   border: 1px solid #e5e5e5;
   justify-content: space-between;
   padding: 5px;
-  color: #ff5a5a;
   margin: 10px;
   position: relative;
-  top: 120px;
-  right: 28px;
+  top: 155px;
+  right: 26px;
 }
 
 .lang1:hover {
-  background-color: #ff5a5a;
+  background-color: #ff6b00;
 }
 
 .lang1 a:hover {
-  background-color: #ff5a5a;
+  background-color: #ff6b00;
   color: white;
 }
 
@@ -297,11 +296,9 @@ li {
   font-weight: 400;
   font-size: 16px;
   color: #091e42;
-  padding-left: 16px;
   line-height: 24px;
   position: relative;
-  top: 130px;
-  right: 43px;
+  top: 165px;
 }
 
 .card-header2 {
@@ -310,7 +307,7 @@ li {
   font-size: 40px;
   color: #1c1a19;
   position: relative;
-  top: 100px;
+  top: 115px;
   right: 25px;
   white-space: nowrap;
 }
@@ -321,7 +318,7 @@ li {
   font-size: 32px;
   color: #08152c;
   position: relative;
-  top: 170px;
+  top: 205px;
   right: 3px;
 }
 
@@ -331,12 +328,12 @@ li {
 
 .stretch {
   position: relative;
-  top: 180px;
+  top: 215px;
 }
 
 .see-project2 {
   position: relative;
-  top: 120px;
+  top: 157px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -347,7 +344,6 @@ li {
   height: 48px;
   padding: 7px 1px;
   text-align: center;
-  right: 2px;
 }
 
 .see-project2:hover {
@@ -389,7 +385,7 @@ li {
   width: 18px;
   height: 18px;
   position: relative;
-  left: 95px;
+  left: 92px;
   top: 275px;
 }
 
@@ -398,7 +394,7 @@ li {
   height: 18px;
   position: relative;
   left: 70px;
-  top: 612px;
+  top: 615px;
 }
 
 .circle {
@@ -406,5 +402,5 @@ li {
   height: 18px;
   position: relative;
   left: 125px;
-  top: 1007px;
+  top: 1014px;
 }
