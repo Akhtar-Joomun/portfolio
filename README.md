@@ -1,7 +1,10 @@
 # Portfolio: setup and mobile version skeleton
   Building the first page of my portfolio using Flexbox and Grid
 
-![screenshot](./screenshot.png)
+![screenshot](https://user-images.githubusercontent.com/70698085/122088907-46a94480-ce17-11eb-8581-9fee88189738.png)
+
+## Live Demo
+![Live Demo](https://ak0706.github.io/portfolio-skeleton/)
 
 ## Built With
 - HTML
