@@ -477,13 +477,27 @@ li {
   font-weight: 700; 
   color: white;
   margin: 24px auto;
+  border: none;
+  font-size: 17px;
 }
 
 .form-social {
+
+  /* set the display style */
   list-style: none;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* set the size */
+  width: 45%;
+  margin: auto auto;
+
+  /* set the background */
 }
 
-.form-social a {
+.social-links {
   
+  /* set the background */
+  filter: invert(35%) sepia(44%) saturate(317%) hue-rotate(179deg) brightness(55%) contrast(88%);
 }
