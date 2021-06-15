@@ -407,11 +407,12 @@ li {
 
 /* here start the section about */
 #about-section {
-
   /* set the position and dimensions */
   width: 375px;
   margin: 120px auto auto auto;
   box-shadow: 0 0 5px red;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-text {
@@ -425,7 +426,43 @@ li {
   /* set the font property */
   font-size: 32px;
   font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: center;
   color: rgba(23, 43, 77, 1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-name {
+  margin: auto;
+  width: 327px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 39px;
+  padding-bottom: 14px;
+  text-indent: 16px;
+}
+
+.form-email {
+  margin: auto;
+  width: 327px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 39px;
+  padding-bottom: 14px;
+  text-indent: 16px;
+}
+
+.form-text-area {
+  margin: auto;
+  width: 327px;
+  height: 114px;
+  background-color: #fbf8f7;
+  border: none;
+  padding: 4px;
+  color: #3c3a39;
 }
