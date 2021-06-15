@@ -237,7 +237,7 @@
             or website Look through some of my work and experience! If you like what
             you see and have a project you need coded, don’t hestiate to contact me.
         </p>
-        <button class="get-resume">Get My Resume</button>
+        <button type="submit" class="get-resume">Get My Resume</button>
         <hr class="ruler2" />
         <img class="diamond" src="images/diamond.png" alt="Diamond bullet point" />
         <img class="square" src="images/square.png" alt="Square bullet point" />
@@ -274,6 +274,44 @@
             </li>
         </ul>
     </section>
+
+    <footer id="about-section">
+        <div class="form-container">
+            <p class="form-text">
+                I'm always interested in hearing about new projects, so if you'd like
+                to chat please get in touch.
+            </p>
+
+            <form class="form-container" action="https://formspree.io/f/xdoyzdjj" method="POST">
+                <input class="form-name" type="text" name="name" placeholder="Full name" maxlength="30" required />
+                <input class="form-email" type="email" name="email" placeholder="Email address" required />
+                <textarea class="form-text-area" name="message" cols="30" rows="10" maxlength="500" required>
+Enter text here</textarea>
+
+                <button class="form-submit" type="submit">Get in touch</button>
+            </form>
+        </div>
+
+        <ul class="form-social">
+            <li>
+                <a href="#"><img src="./images/github.svg" alt="github" class="social-links" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/Linkedin.svg" alt="linkedin" class="social-links" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/angel.svg" alt="angel" class="social-links" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/twitter.svg" alt="twitter" class="social-links" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/medium.svg" alt="medium" class="social-links" /></a>
+            </li>
+        </ul>
+
+        <hr />
+    </footer>
 </body>
 
 </html>

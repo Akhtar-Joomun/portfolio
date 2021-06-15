@@ -25,7 +25,8 @@ nav,
 
 h1,
 h2,
-p {
+.text,
+.john {
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -100,7 +101,7 @@ nav {
   margin: 0 auto;
   padding-bottom: 24px;
   position: relative;
-  right: 7px;
+  right: 8px;
 }
 
 .card-header {
@@ -175,7 +176,7 @@ nav {
   width: 360px;
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-template-rows: 2.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2.2fr 1fr 1fr 1fr 1fr 1fr 1.07fr;
   row-gap: 30px;
 }
 
@@ -191,8 +192,6 @@ nav {
   background-position-x: 650%;
   background-position-y: 21%;
   margin: 0 auto;
-  position: relative;
-  top: 28px;
 }
 
 .about-me-title {
@@ -224,6 +223,8 @@ nav {
   text-decoration: none;
   color: white;
   text-align: center;
+  margin-top: 20px;
+  border: none;
 }
 
 .get-resume:hover {
@@ -244,7 +245,7 @@ nav {
   background-color: #000;
   height: 1px;
   position: relative;
-  top: 100px;
+  top: 120px;
 }
 
 li {
@@ -276,19 +277,18 @@ li {
   border: 1px solid #e5e5e5;
   justify-content: space-between;
   padding: 5px;
-  color: #ff5a5a;
   margin: 10px;
   position: relative;
-  top: 120px;
-  right: 28px;
+  top: 155px;
+  right: 26px;
 }
 
 .lang1:hover {
-  background-color: #ff5a5a;
+  background-color: #ff6b00;
 }
 
 .lang1 a:hover {
-  background-color: #ff5a5a;
+  background-color: #ff6b00;
   color: white;
 }
 
@@ -297,11 +297,9 @@ li {
   font-weight: 400;
   font-size: 16px;
   color: #091e42;
-  padding-left: 16px;
   line-height: 24px;
   position: relative;
-  top: 130px;
-  right: 43px;
+  top: 165px;
 }
 
 .card-header2 {
@@ -310,7 +308,7 @@ li {
   font-size: 40px;
   color: #1c1a19;
   position: relative;
-  top: 100px;
+  top: 115px;
   right: 25px;
   white-space: nowrap;
 }
@@ -321,7 +319,7 @@ li {
   font-size: 32px;
   color: #08152c;
   position: relative;
-  top: 170px;
+  top: 205px;
   right: 3px;
 }
 
@@ -331,12 +329,12 @@ li {
 
 .stretch {
   position: relative;
-  top: 180px;
+  top: 215px;
 }
 
 .see-project2 {
   position: relative;
-  top: 120px;
+  top: 157px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -347,7 +345,6 @@ li {
   height: 48px;
   padding: 7px 1px;
   text-align: center;
-  right: 2px;
 }
 
 .see-project2:hover {
@@ -389,7 +386,7 @@ li {
   width: 18px;
   height: 18px;
   position: relative;
-  left: 95px;
+  left: 92px;
   top: 275px;
 }
 
@@ -398,7 +395,7 @@ li {
   height: 18px;
   position: relative;
   left: 70px;
-  top: 612px;
+  top: 615px;
 }
 
 .circle {
@@ -406,5 +403,118 @@ li {
   height: 18px;
   position: relative;
   left: 125px;
-  top: 1007px;
+  top: 1014px;
+}
+
+/* here start the section about */
+#about-section {
+  /* set the position and dimensions */
+  width: 375px;
+  margin: 120px auto auto auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  /* set the position and dimensions */
+  width: 327px;
+  height: auto;
+  margin: auto 24px 70px 24px;
+
+  /* set the font property */
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: rgba(23, 43, 77, 1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-name {
+  margin: auto;
+  width: 327px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 39px;
+  padding-bottom: 14px;
+  text-indent: 16px;
+  outline: none;
+}
+
+.form-email {
+  margin: auto;
+  width: 327px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 39px;
+  padding-bottom: 14px;
+  text-indent: 16px;
+  outline: none;
+}
+
+.form-text-area {
+  margin: auto;
+  width: 327px;
+  height: 114px;
+  background-color: #fbf8f7;
+  border: none;
+  text-indent: 14px;
+  color: #3c3a39;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  outline: none;
+}
+
+.form-submit {
+  background-color: #ff6b00;
+  width: 131px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 24px auto;
+  border: none;
+  font-size: 17px;
+}
+
+.form-submit:hover {
+  background-color: white;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.form-social {
+  /* set the display style */
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* set the size */
+  width: 45%;
+  margin: auto auto;
+
+  /* set the background */
+}
+
+.social-links {
+  /* set the background */
+  filter: invert(35%) sepia(44%) saturate(317%) hue-rotate(179deg) brightness(55%) contrast(88%);
+}
+
+.social-links:hover {
+  filter: invert(48%) sepia(42%) saturate(5099%) hue-rotate(2deg) brightness(104%) contrast(103%);
+}
+
+hr {
+  width: 134px;
+  height: 5px;
+  margin: 23px auto 8px auto;
+  background-color: rgba(13, 21, 30, 1);
+  border-radius: 10px;
 }
