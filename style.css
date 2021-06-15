@@ -404,3 +404,28 @@ li {
   left: 125px;
   top: 1014px;
 }
+
+/* here start the section about */
+#about-section {
+
+  /* set the position and dimensions */
+  width: 375px;
+  margin: 120px auto auto auto;
+  box-shadow: 0 0 5px red;
+}
+
+.form-text {
+  box-shadow: 0 0 5px blue;
+
+  /* set the position and dimensions */
+  width: 327px;
+  height: auto;
+  margin: auto 24px 70px 24px;
+
+  /* set the font property */
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: rgba(23, 43, 77, 1);
+}
