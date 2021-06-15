@@ -224,6 +224,7 @@ nav {
   color: white;
   text-align: center;
   margin-top: 20px;
+  border: none;
 }
 
 .get-resume:hover {
@@ -504,6 +505,10 @@ li {
 .social-links {
   /* set the background */
   filter: invert(35%) sepia(44%) saturate(317%) hue-rotate(179deg) brightness(55%) contrast(88%);
+}
+
+.social-links:hover {
+  filter: invert(48%) sepia(42%) saturate(5099%) hue-rotate(2deg) brightness(104%) contrast(103%);
 }
 
 hr {
