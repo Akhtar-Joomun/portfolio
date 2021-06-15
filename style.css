@@ -463,6 +463,27 @@ li {
   height: 114px;
   background-color: #fbf8f7;
   border: none;
-  padding: 4px;
+  text-indent: 14px;
   color: #3c3a39;
+  font-family: "Inter", sans-serif;
+  font-weight: 400; 
+}
+
+.form-submit {
+  background-color: #FF6B00;
+  width: 131px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700; 
+  color: white;
+  margin: 24px auto;
+}
+
+.form-social {
+  list-style: none;
+  
+}
+
+.form-social a {
+  
 }
