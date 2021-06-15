@@ -506,9 +506,8 @@ li {
 
 .social-links {
   /* set the background */
-  filter: 
-  invert(35%) sepia(44%) saturate(317%) hue-rotate(179deg)
-    brightness(55%) contrast(88%);
+  filter :
+  invert(35%) sepia(44%) saturate(317%) hue-rotate(179deg) brightness(55%) contrast(88%);
 }
 
 hr {
