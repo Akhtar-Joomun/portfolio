@@ -410,14 +410,11 @@ li {
   /* set the position and dimensions */
   width: 375px;
   margin: 120px auto auto auto;
-  box-shadow: 0 0 5px red;
   display: flex;
   flex-direction: column;
 }
 
 .form-text {
-  box-shadow: 0 0 5px blue;
-
   /* set the position and dimensions */
   width: 327px;
   height: auto;
