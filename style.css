@@ -184,7 +184,6 @@ nav {
 }
 
 .about-me-main {
-  width: 375px;
   height: 1901px;
   background-color: #1c1a19;
   display: flex;
@@ -400,7 +399,7 @@ li {
   width: 18px;
   height: 18px;
   position: relative;
-  left: 92px;
+  left: 127px;
   top: 275px;
 }
 
@@ -408,7 +407,7 @@ li {
   width: 18px;
   height: 18px;
   position: relative;
-  left: 70px;
+  left: 105px;
   top: 615px;
 }
 
@@ -416,7 +415,7 @@ li {
   width: 18px;
   height: 18px;
   position: relative;
-  left: 125px;
+  left: 160px;
   top: 1014px;
 }
 
