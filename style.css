@@ -9,6 +9,7 @@ nav,
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  width: 375px;
 }
 
 .main-page {
@@ -194,6 +195,7 @@ nav {
   background-position-x: 650%;
   background-position-y: 21%;
   margin: 0 auto;
+  width: 375px;
 }
 
 .about-me-title {
@@ -399,7 +401,7 @@ li {
   width: 18px;
   height: 18px;
   position: relative;
-  left: 127px;
+  left: 92px;
   top: 275px;
 }
 
@@ -407,7 +409,7 @@ li {
   width: 18px;
   height: 18px;
   position: relative;
-  left: 105px;
+  left: 70px;
   top: 615px;
 }
 
@@ -415,7 +417,7 @@ li {
   width: 18px;
   height: 18px;
   position: relative;
-  left: 160px;
+  left: 125px;
   top: 1014px;
 }
 
@@ -547,7 +549,7 @@ hr {
   }
 
   * {
-    box-sizing: border-box;
+    width: 100%;
   }
 
   .john {
@@ -648,7 +650,7 @@ hr {
     width: 794px;
     position: relative;
     top: 40px;
-    right: 50px;
+    right: 60px;
   }
 
   .stretch {
