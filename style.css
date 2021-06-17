@@ -503,12 +503,10 @@ li {
 }
 
 .form-social {
-  /* set the display style */
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* set the size */
   width: 45%;
   margin: auto auto;
   position: relative;
@@ -516,7 +514,6 @@ li {
 }
 
 .social-links {
-  /* set the background */
   filter: invert(35%) sepia(44%) saturate(317%) hue-rotate(179deg) brightness(55%) contrast(88%);
 }
 
@@ -780,15 +777,15 @@ hr {
     display: none;
   }
 
+  .card-header {
+    display: none;
+  }
+
   .work1 .card-header {
     display: none;
   }
 
   .work1 .card-body {
-    display: none;
-  }
-
-  .card-header {
     display: none;
   }
 
