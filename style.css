@@ -906,12 +906,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / 0.2) 35%,
-        hsl(0 0% 0% / 1)
-      ),
-      url(images/card1.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -919,12 +914,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background-image: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / 0),
-        hsl(0 0% 0% / 0)
-      ),
-      url(images/card1.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0), hsl(0 0% 0% / 0)),url(images/card1.png);
   }
 
   .card-1 .texts {
@@ -959,12 +949,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / 0.2) 35%,
-        hsl(0 0% 0% / 1)
-      ),
-      url(images/card2.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -978,12 +963,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / 0.2) 35%,
-        hsl(0 0% 0% / 1)
-      ),
-      url(images/card3.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -997,12 +977,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / 0.2) 35%,
-        hsl(0 0% 0% / 1)
-      ),
-      url(images/card1.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
