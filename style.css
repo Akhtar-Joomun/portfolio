@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-*::selection {
-  background-color: rgb(53, 63, 255);
-}
-
 .header {
   background-color: #3c3a39;
   padding: 12px 24px;
@@ -28,6 +24,11 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
+    transition: transform 0.5s;
+}
+
+.brand:hover {
+  transform: scale(1.15);
 }
 
 .menu {
@@ -60,6 +61,17 @@
   background-position-x: right;
   background-position-y: 325px;
   background-repeat: no-repeat;
+  animation-duration: 2s;
+  animation-name: entry-mob;
+}
+
+@keyframes entry-mob {
+  from {
+    background-position-x: 200%;
+  }
+  to {
+    background-position-x: right;
+  }
 }
 
 .title {
@@ -78,6 +90,11 @@
   letter-spacing: 0.37px;
   line-height: 64px;
   margin-bottom: 15px;
+  transition: transform 2s;
+}
+
+.title h1:hover {
+  transform: rotate(360deg);
 }
 
 .title h2 {
@@ -360,7 +377,7 @@
   background-position-y: 410px;
 }
 
-.aboutHead {
+.about-texts {
   width: 85vw;
   margin-top: 120px;
   margin-bottom: 130px;
@@ -368,7 +385,7 @@
   border-bottom: 1px solid #fff;
 }
 
-.aboutHead h1 {
+.about-texts h1 {
   color: #ff6b00;
   font-family: "Crete Round", serif;
   font-weight: 400;
@@ -378,7 +395,7 @@
   margin-bottom: 15px;
 }
 
-.aboutHead p {
+.about-texts p {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -388,7 +405,7 @@
   margin-bottom: 35px;
 }
 
-.aboutHead .get-resume {
+.about-texts .get-resume {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -399,31 +416,31 @@
   border: none;
 }
 
-.aboutHead .get-resume:hover {
+.about-texts .get-resume:hover {
   color: #ff6b00;
   background-color: #fff5e1;
   border: 1px solid #ff6b00;
   transition: 0.4s;
 }
 
-.aboutHead .get-resume:focus {
+.about-texts .get-resume:focus {
   color: #f4f1f0;
   background-color: #e05304;
   transition: 0.4s;
   border: none;
 }
 
-.aboutHead .get-resume:disabled {
+.about-texts .get-resume:disabled {
   color: #5b5957;
   background-color: #f4f1f0;
   border: none;
 }
 
-.aboutLine {
+.language {
   display: none;
 }
 
-.techList {
+.lang-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -504,7 +521,7 @@
   width: 85vw;
 }
 
-.title-box .contactTitle {
+.title-box .contact-message {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -582,7 +599,7 @@
   opacity: 1;
 }
 
-.contact-form .contactBtn {
+.contact-form .contact-btn {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -593,21 +610,21 @@
   border: none;
 }
 
-.contact-form .contactBtn:hover {
+.contact-form .contact-btn:hover {
   color: #ff6b00;
   background-color: #fff5e1;
   border: 1px solid #ff6b00;
   transition: 0.4s;
 }
 
-.contact-form .contactBtn:focus {
+.contact-form .contact-btn:focus {
   color: #f4f1f0;
   background-color: #e05304;
   transition: 0.4s;
   border: none;
 }
 
-.contact-form .contactBtn:disabled {
+.contact-form .contact-btn:disabled {
   color: #5b5957;
   background-color: #f4f1f0;
   border: none;
@@ -685,7 +702,7 @@
     background-position: center;
   }
 
-  .aboutHead p {
+  .about-texts p {
     width: 55vw;
   }
 }
@@ -712,7 +729,6 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 20px;
-    transition: transform 2s;
   }
 
   .nav {
@@ -749,7 +765,19 @@
     background-position-y: center;
     background-position-x: right;
     background-size: contain;
+    animation-duration: 3s;
+    animation-name: entry-desk;
   }
+
+  @keyframes entry-desk {
+    from {
+      background-position-x: 200%;
+    }
+    to {
+      background-position-x: right;
+    }
+  }
+
 
   .mainContainer {
     width: 50%;
@@ -986,7 +1014,7 @@
     align-items: flex-start;
   }
 
-  .aBtn {
+  .button {
     width: 100%;
     height: 100%;
     text-decoration: none;
@@ -1004,7 +1032,7 @@
     align-items: center;
   }
 
-  .aBtn:hover {
+  .button:hover {
     width: 99%;
     height: 99%;
     color: #ff6b00;
@@ -1013,14 +1041,14 @@
     transition: 0.4s;
   }
 
-  .aBtn:focus {
+  .button:focus {
     color: #f4f1f0;
     background-color: #e05304;
     transition: 0.4s;
     border: none;
   }
 
-  .aBtn:disabled {
+  .button:disabled {
     color: #5b5957;
     background-color: #f4f1f0;
     border: none;
@@ -1038,7 +1066,7 @@
     background-position-y: 120px;
   }
 
-  .aboutHead {
+  .about-texts {
     margin-top: 0;
     display: flex;
     flex-direction: column;
@@ -1050,11 +1078,11 @@
     margin-bottom: 0;
   }
 
-  .aboutHead h1 {
+  .about-texts h1 {
     margin-bottom: 0;
   }
 
-  .aboutHead p {
+  .about-texts p {
     width: 55%;
     font-size: 20px;
     font-weight: 400;
@@ -1062,7 +1090,7 @@
     margin: 24px 0 42px 0;
   }
 
-  .aboutLine {
+  .language {
     display: block;
     height: 1px;
     background-color: white;
@@ -1070,7 +1098,7 @@
     margin-top: 42px;
   }
 
-  .techList {
+  .lang-list {
     height: 396px;
     width: 80vw;
     display: flex;
@@ -1080,7 +1108,7 @@
     margin-top: 146px;
   }
 
-  .techsContainer {
+  .lang-container {
     width: 80vw;
     width: 90%;
     display: flex;
@@ -1127,7 +1155,7 @@
     width: 37%;
   }
 
-  .title-box .contactTitle {
+  .title-box .contact-message {
     text-align: left;
     font-size: 40px;
     color: #172b4d;
