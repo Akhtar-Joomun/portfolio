@@ -69,6 +69,7 @@
   from {
     background-position-x: 200%;
   }
+
   to {
     background-position-x: right;
   }
@@ -88,6 +89,7 @@
   from {
     margin-left: -210%;
   }
+
   to {
     margin-left: 0;
   }
@@ -102,10 +104,6 @@
   line-height: 64px;
   margin-bottom: 15px;
   transition: transform 2s;
-}
-
-.title h1:hover {
-  transform: rotate(360deg);
 }
 
 .title h2 {
@@ -318,6 +316,7 @@
   0% {
     transform: rotateZ(360deg);
   }
+
   50% {
     transform: rotateY(360deg);
   }
@@ -327,6 +326,7 @@
   from {
     margin-left: -210%;
   }
+
   to {
     margin-left: 0;
   }
@@ -353,7 +353,7 @@
   background: rgba(255, 255, 255, 0.24);
   animation-name: rotate3D, comein;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
   transition-property: animation-duration;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
@@ -429,6 +429,10 @@
   letter-spacing: 0.37px;
   line-height: 81.5px;
   margin-bottom: 15px;
+}
+
+.title h1:hover {
+  transform: rotate(360deg);
 }
 
 .about-texts p {
@@ -507,15 +511,19 @@
   0% {
     color: white;
   }
+
   25% {
     color: yellow;
   }
+
   50% {
     color: rgb(255, 196, 0);
   }
+
   75% {
     color: rgb(255, 174, 0);
   }
+
   85% {
     color: #ff6b00;
   }
@@ -525,6 +533,7 @@
   0% {
     transform: rotate(-270deg);
   }
+
   50% {
     transform: matrix(1, -0.3, 0, 1, 0, 0);
   }
@@ -535,7 +544,7 @@
   padding-right: 14px;
   animation-name: change-color, rotate;
   animation-duration: 3s, 3s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 5;
 }
 
 .list .title .flip {
@@ -851,6 +860,7 @@
     from {
       background-position-x: 200%;
     }
+    
     to {
       background-position-x: right;
     }
