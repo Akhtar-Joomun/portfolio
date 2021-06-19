@@ -314,7 +314,22 @@
   line-height: 24px;
 }
 
+@keyframes rotate3D {
+  0% {transform: rotateZ(360deg)}
+  50% {transform: rotateY(360deg)}
+}
+
+@keyframes comein {
+  from {
+    margin-left: -210%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
 .card-links {
+  overflow: hidden;
   padding: 4px 16px 22px 16px;
   display: flex;
   flex-direction: row;
@@ -332,6 +347,12 @@
   margin-right: 12px;
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
+  animation-name: rotate3D, comein;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transition-property: animation-duration;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .card-btn {
@@ -459,6 +480,10 @@
   list-style-type: none;
   margin-bottom: 130px;
   width: 85vw;
+
+  /* transition */
+  transition-property: display-flex;
+  transition-duration: 3s;
 }
 
 .list {
@@ -474,9 +499,25 @@
   margin-top: 12px;
 }
 
+@keyframes change-color {
+  0% { color: white; }
+  25% { color: yellow; }
+  50% { color: rgb(255, 196, 0); }
+  75% { color: rgb(255, 174, 0); }
+  85% { color: #ff6b00; }
+}
+
+@keyframes rotate {
+  0% {transform: rotate(-270deg);}
+  50% { transform: matrix(1, -0.3, 0, 1, 0, 0) }
+}
+
 .list .title i {
   color: #ff6b00;
   padding-right: 14px;
+  animation-name: change-color, rotate;
+  animation-duration: 3s, 3s;
+  animation-iteration-count: infinite;
 }
 
 .list .title .flip {
