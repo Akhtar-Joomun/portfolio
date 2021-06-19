@@ -24,11 +24,11 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
-    transition: transform 0.5s;
+  transition: transform 0.5s;
 }
 
 .brand:hover {
-  transform: scale(1.15);
+  transform: skew(25deg);
 }
 
 .menu {
@@ -61,7 +61,7 @@
   background-position-x: right;
   background-position-y: 325px;
   background-repeat: no-repeat;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: entry-mob;
 }
 
@@ -80,6 +80,17 @@
   width: 100%;
   justify-content: center;
   align-items: flex-start;
+  animation-duration: 3s;
+  animation-name: title;
+}
+
+@keyframes title {
+  from {
+    margin-left: -210%;
+  }
+  to {
+    margin-left: 0;
+  }
 }
 
 .title h1 {
@@ -736,6 +747,14 @@
     width: 300px;
   }
 
+  .nav li {
+    transition: transform 0.5s;
+  }
+
+  .nav li:hover {
+    transform: scale(1.15);
+  }
+
   .nav ul {
     color: white;
     font-family: "Inter", sans-serif;
@@ -777,7 +796,6 @@
       background-position-x: right;
     }
   }
-
 
   .mainContainer {
     width: 50%;
@@ -934,7 +952,12 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0), hsl(0 0% 0% / 0)), url(images/card1.png);
+    background-image: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0),
+        hsl(0 0% 0% / 0)
+      ),
+      url(images/card1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -976,7 +999,12 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card2.png);
+    background-image: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.2) 35%,
+        hsl(0 0% 0% / 1)
+      ),
+      url(images/card2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1004,7 +1032,12 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card1.png);
+    background-image: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.2) 35%,
+        hsl(0 0% 0% / 1)
+      ),
+      url(images/card1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
