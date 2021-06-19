@@ -315,8 +315,12 @@
 }
 
 @keyframes rotate3D {
-  0% {transform: rotateZ(360deg)}
-  50% {transform: rotateY(360deg)}
+  0% {
+    transform: rotateZ(360deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
 }
 
 @keyframes comein {
@@ -500,16 +504,30 @@
 }
 
 @keyframes change-color {
-  0% { color: white; }
-  25% { color: yellow; }
-  50% { color: rgb(255, 196, 0); }
-  75% { color: rgb(255, 174, 0); }
-  85% { color: #ff6b00; }
+  0% {
+    color: white;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: rgb(255, 196, 0);
+  }
+  75% {
+    color: rgb(255, 174, 0);
+  }
+  85% {
+    color: #ff6b00;
+  }
 }
 
 @keyframes rotate {
-  0% {transform: rotate(-270deg);}
-  50% { transform: matrix(1, -0.3, 0, 1, 0, 0) }
+  0% {
+    transform: rotate(-270deg);
+  }
+  50% {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+  }
 }
 
 .list .title i {
@@ -993,12 +1011,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / 0),
-        hsl(0 0% 0% / 0)
-      ),
-      url(images/card1.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0), hsl(0 0% 0% / 0)), url(images/card1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1040,12 +1053,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / 0.2) 35%,
-        hsl(0 0% 0% / 1)
-      ),
-      url(images/card2.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1073,12 +1081,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / 0.2) 35%,
-        hsl(0 0% 0% / 1)
-      ),
-      url(images/card1.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
