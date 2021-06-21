@@ -29,6 +29,7 @@ Make sure the files are in the same folder.
 ## Acknowledgments
 - Hat tip to anyone whose code was used
 - Inspiration
+- Figma for the design template
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
