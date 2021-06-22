@@ -39,10 +39,23 @@
 }
 
 .btn {
-  color: white;
+  color: #dbd8d7;
   background-color: transparent;
   text-decoration: none;
   border: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.15);
+}
+
+.btn a {
+  color: #dbd8d7;
+}
+
+.btn a:hover {
+  color: #C75300;
 }
 
 .nav {
@@ -96,7 +109,7 @@
 }
 
 .title h1 {
-  color: #ff6b00;
+  color: #C75300;
   font-family: "Crete Round", serif;
   font-weight: 400;
   font-size: 56px;
@@ -141,8 +154,21 @@
   list-style-type: none;
 }
 
+.icon-links li {
+  transition: transform 0.3s;
+}
+
+.icon-links li:hover {
+  transform: scale(1.25);
+}
+
 .icon-links li a {
   color: #dbd8d7;
+}
+
+.icon-links li a:hover {
+  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg)
+    brightness(103%) contrast(104%);
 }
 
 .works {
@@ -245,21 +271,21 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #C75300;
   padding: 12px;
   border: none;
 }
 
 .see-project button:hover {
-  color: #ff6b00;
+  color: #C75300;
   background-color: #fff5e1;
-  border: 1px solid #ff6b00;
+  border: 1px solid #C75300;
   transition: 0.4s;
 }
 
 .see-project button:focus {
   color: #f4f1f0;
-  background-color: #e05304;
+  background-color: #C75300;
   transition: 0.4s;
   border: none;
 }
@@ -363,11 +389,16 @@
   transition-timing-function: ease-in-out;
 }
 
+.card-links a {
+  text-decoration: none;
+  color: white;
+}
+
 .card-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff6b00;
+  background-color: #C75300;
   height: 48px;
   width: 100%;
 }
@@ -379,21 +410,21 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #C75300;
   padding: 12px;
   border: none;
 }
 
 .card-btn .card-see-project:hover {
-  color: #ff6b00;
+  color: #C75300;
   background-color: #fff5e1;
-  border: 1px solid #ff6b00;
+  border: 1px solid #C75300;
   transition: 0.4s;
 }
 
 .card-btn .card-see-project:focus {
   color: #f4f1f0;
-  background-color: #e05304;
+  background-color: #C75300;
   transition: 0.4s;
   border: none;
 }
@@ -426,7 +457,7 @@
 }
 
 .about-texts h2 {
-  color: #ff6b00;
+  color: #C75300;
   font-family: "Crete Round", serif;
   font-weight: 400;
   font-size: 3.9rem;
@@ -455,21 +486,21 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #C75300;
   padding: 12px;
   border: none;
 }
 
 .about-texts .get-resume:hover {
-  color: #ff6b00;
+  color: #C75300;
   background-color: #fff5e1;
-  border: 1px solid #ff6b00;
+  border: 1px solid #C75300;
   transition: 0.4s;
 }
 
 .about-texts .get-resume:focus {
   color: #f4f1f0;
-  background-color: #e05304;
+  background-color: #C75300;
   transition: 0.4s;
   border: none;
 }
@@ -529,7 +560,7 @@
   }
 
   85% {
-    color: #ff6b00;
+    color: #C75300;
   }
 }
 
@@ -544,7 +575,7 @@
 }
 
 .list .title i {
-  color: #ff6b00;
+  color: #C75300;
   padding-right: 14px;
   animation-name: change-color, rotate;
   animation-duration: 3s, 3s;
@@ -688,21 +719,21 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #C75300;
   padding: 12px;
   border: none;
 }
 
 .contact-form .contact-btn:hover {
-  color: #ff6b00;
+  color: #C75300;
   background-color: #fff5e1;
-  border: 1px solid #ff6b00;
+  border: 1px solid #C75300;
   transition: 0.4s;
 }
 
 .contact-form .contact-btn:focus {
   color: #f4f1f0;
-  background-color: #e05304;
+  background-color: #C75300;
   transition: 0.4s;
   border: none;
 }
@@ -736,8 +767,20 @@
   width: 200px;
 }
 
+.footer-icons li {
+  transition: 0.3s;
+}
+
+.footer-icons li:hover {
+  transform: scale(1.25);
+}
+
 .footer-icons li a {
   color: #505f79;
+}
+
+.footer-icons li a:hover {
+  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
 
 .footer-icons-container::after {
@@ -824,12 +867,16 @@
   }
 
   .nav li {
-    transition: transform 0.5s;
+    transition: transform 0.3s;
   }
 
   .nav li a {
     text-decoration: none;
     color: white;
+  }
+
+  .nav li a:hover {
+    filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
   }
 
   .nav li:hover {
@@ -890,7 +937,7 @@
   }
 
   .title h1 {
-    color: #ff6b00;
+    color: #C75300;
     font-family: "Crete Round", serif;
     font-weight: 400;
     font-size: 72px;
@@ -1104,7 +1151,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card1.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.5) 35%, hsl(0 0% 0% / 1)), url(images/card4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1123,7 +1170,7 @@
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-    background-color: #ff6b00;
+    background-color: #C75300;
     display: block;
     display: flex;
     padding: 0;
@@ -1135,15 +1182,15 @@
   .button:hover {
     width: 99%;
     height: 99%;
-    color: #ff6b00;
+    color: #C75300;
     background-color: #fff5e1;
-    border: 1px solid #ff6b00;
+    border: 1px solid #C75300;
     transition: 0.4s;
   }
 
   .button:focus {
     color: #f4f1f0;
-    background-color: #e05304;
+    background-color: #C75300;
     transition: 0.4s;
     border: none;
   }
