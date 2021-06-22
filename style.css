@@ -43,32 +43,8 @@
   color: white;
 }
 
-.icon-links {
-  width: 200px;
-  height: 0;
-  color: #dbd8d7;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  list-style-type: none;
-}
-
-.icon-links li {
-  transition: transform 0.3s;
-}
-
-.icon-links li a {
-  color: #dbd8d7;
-}
-
-.icon-links li:hover {
-  transform: scale(1.25);
-}
-
-.icon-links li a:hover {
-  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
+.footer-icons li a {
+  color: #505f79;
 }
 
 .btn {
@@ -218,10 +194,6 @@
   transform: scale(1.25);
 }
 
-.footer-icons li a {
-  color: #505f79;
-}
-
 .footer-icons li a:hover {
   filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
@@ -233,6 +205,34 @@
   height: 5px;
   border-radius: 10px;
   width: 134px;
+}
+
+.icon-links {
+  width: 200px;
+  height: 0;
+  color: #dbd8d7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+}
+
+.icon-links li {
+  transition: transform 0.3s;
+}
+
+.icon-links li a {
+  color: #dbd8d7;
+}
+
+.icon-links li:hover {
+  transform: scale(1.25);
+}
+
+.icon-links li a:hover {
+  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
 
 .works {
