@@ -43,52 +43,32 @@
   color: white;
 }
 
-.footer-icons-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 72px;
-  border-top: 1px solid #dfe1e6;
-  margin-bottom: 8px;
-}
-
-.footer-icons {
-  color: #505f79;
+.icon-links {
+  width: 200px;
+  height: 0;
+  color: #dbd8d7;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  margin: 0;
   list-style-type: none;
-  margin: 15px 0 13px 0;
-  height: 40px;
-  width: 200px;
 }
 
-.footer-icons li {
-  transition: 0.3s;
+.icon-links li {
+  transition: transform 0.3s;
 }
 
-.footer-icons li:hover {
+.icon-links li a {
+  color: #dbd8d7;
+}
+
+.icon-links li:hover {
   transform: scale(1.25);
 }
 
-.footer-icons li a {
-  color: #505f79;
-}
-
-.footer-icons li a:hover {
+.icon-links li a:hover {
   filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
-}
-
-.footer-icons-container::after {
-  content: "";
-  position: relative;
-  background-color: #0d151e;
-  height: 5px;
-  border-radius: 10px;
-  width: 134px;
 }
 
 .btn {
@@ -207,33 +187,52 @@
   transition-timing-function: ease-in-out;
 }
 
-.icon-links {
-  width: 200px;
-  height: 0;
-  color: #dbd8d7;
+.footer-icons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  border-top: 1px solid #dfe1e6;
+  margin-bottom: 8px;
+}
+
+.footer-icons {
+  color: #505f79;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  margin: 0;
+  justify-content: space-around;
   list-style-type: none;
+  margin: 15px 0 13px 0;
+  height: 40px;
+  width: 200px;
 }
 
-.icon-links li {
-  transition: transform 0.3s;
+.footer-icons li {
+  transition: 0.3s;
 }
 
-.icon-links li a {
-  color: #dbd8d7;
-}
-
-.icon-links li:hover {
+.footer-icons li:hover {
   transform: scale(1.25);
 }
 
-.icon-links li a:hover {
-  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg)
-    brightness(103%) contrast(104%);
+.footer-icons li a {
+  color: #505f79;
+}
+
+.footer-icons li a:hover {
+  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
+}
+
+.footer-icons-container::after {
+  content: "";
+  position: relative;
+  background-color: #0d151e;
+  height: 5px;
+  border-radius: 10px;
+  width: 134px;
 }
 
 .works {
