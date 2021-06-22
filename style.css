@@ -141,6 +141,10 @@
   list-style-type: none;
 }
 
+.icon-links li a {
+  color: #dbd8d7;
+}
+
 .works {
   display: flex;
   flex-direction: column;
@@ -421,7 +425,7 @@
   border-bottom: 1px solid #fff;
 }
 
-.about-texts h1 {
+.about-texts h2 {
   color: #ff6b00;
   font-family: "Crete Round", serif;
   font-weight: 400;
@@ -732,6 +736,10 @@
   width: 200px;
 }
 
+.footer-icons li a {
+  color: #505f79;
+}
+
 .footer-icons-container::after {
   content: "";
   position: relative;
@@ -819,12 +827,17 @@
     transition: transform 0.5s;
   }
 
+  .nav li a {
+    text-decoration: none;
+    color: white;
+  }
+
   .nav li:hover {
     transform: scale(1.15);
   }
 
   .nav ul {
-    color: white;
+    color: #fff;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 15px;
@@ -1165,7 +1178,7 @@
     margin-bottom: 0;
   }
 
-  .about-texts h1 {
+  .about-texts h2 {
     margin-bottom: 0;
   }
 
