@@ -43,8 +43,16 @@
   color: white;
 }
 
+.btn a {
+  color: #dbd8d7;
+}
+
 .footer-icons li a {
   color: #505f79;
+}
+
+.icon-links li a {
+  color: #dbd8d7;
 }
 
 .btn {
@@ -57,10 +65,6 @@
 
 .btn:hover {
   transform: scale(1.15);
-}
-
-.btn a {
-  color: #dbd8d7;
 }
 
 .btn a:hover {
@@ -186,6 +190,10 @@
   width: 200px;
 }
 
+.icon-links li {
+  transition: transform 0.3s;
+}
+
 .footer-icons li {
   transition: 0.3s;
 }
@@ -217,14 +225,6 @@
   align-items: center;
   margin: 0;
   list-style-type: none;
-}
-
-.icon-links li {
-  transition: transform 0.3s;
-}
-
-.icon-links li a {
-  color: #dbd8d7;
 }
 
 .icon-links li:hover {
