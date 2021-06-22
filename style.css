@@ -38,11 +38,37 @@
   width: 67.5px;
 }
 
-.btn {
+.card-links a {
+  text-decoration: none;
   color: white;
+}
+
+.btn a {
+  color: #dbd8d7;
+}
+
+.footer-icons li a {
+  color: #505f79;
+}
+
+.icon-links li a {
+  color: #dbd8d7;
+}
+
+.btn {
+  color: #dbd8d7;
   background-color: transparent;
   text-decoration: none;
   border: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.15);
+}
+
+.btn a:hover {
+  color: #c75300;
 }
 
 .nav {
@@ -96,7 +122,7 @@
 }
 
 .title h1 {
-  color: #ff6b00;
+  color: #c75300;
   font-family: "Crete Round", serif;
   font-weight: 400;
   font-size: 56px;
@@ -129,6 +155,66 @@
   display: none;
 }
 
+.card-links li {
+  margin-right: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  animation-name: rotate3D, comein;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+  transition-property: animation-duration;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.footer-icons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  border-top: 1px solid #dfe1e6;
+  margin-bottom: 8px;
+}
+
+.footer-icons {
+  color: #505f79;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 15px 0 13px 0;
+  height: 40px;
+  width: 200px;
+}
+
+.icon-links li {
+  transition: transform 0.3s;
+}
+
+.footer-icons li {
+  transition: 0.3s;
+}
+
+.footer-icons li:hover {
+  transform: scale(1.25);
+}
+
+.footer-icons li a:hover {
+  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
+}
+
+.footer-icons-container::after {
+  content: "";
+  position: relative;
+  background-color: #0d151e;
+  height: 5px;
+  border-radius: 10px;
+  width: 134px;
+}
+
 .icon-links {
   width: 200px;
   height: 0;
@@ -139,6 +225,14 @@
   align-items: center;
   margin: 0;
   list-style-type: none;
+}
+
+.icon-links li:hover {
+  transform: scale(1.25);
+}
+
+.icon-links li a:hover {
+  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
 
 .works {
@@ -241,21 +335,21 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #c75300;
   padding: 12px;
   border: none;
 }
 
 .see-project button:hover {
-  color: #ff6b00;
+  color: #c75300;
   background-color: #fff5e1;
-  border: 1px solid #ff6b00;
+  border: 1px solid #c75300;
   transition: 0.4s;
 }
 
 .see-project button:focus {
   color: #f4f1f0;
-  background-color: #e05304;
+  background-color: #c75300;
   transition: 0.4s;
   border: none;
 }
@@ -347,23 +441,11 @@
   list-style-type: none;
 }
 
-.card-links li {
-  margin-right: 12px;
-  padding: 10px 12px;
-  background: rgba(255, 255, 255, 0.24);
-  animation-name: rotate3D, comein;
-  animation-duration: 5s;
-  animation-iteration-count: 3;
-  transition-property: animation-duration;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-}
-
 .card-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff6b00;
+  background-color: #c75300;
   height: 48px;
   width: 100%;
 }
@@ -375,21 +457,21 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #c75300;
   padding: 12px;
   border: none;
 }
 
 .card-btn .card-see-project:hover {
-  color: #ff6b00;
+  color: #c75300;
   background-color: #fff5e1;
-  border: 1px solid #ff6b00;
+  border: 1px solid #c75300;
   transition: 0.4s;
 }
 
 .card-btn .card-see-project:focus {
   color: #f4f1f0;
-  background-color: #e05304;
+  background-color: #c75300;
   transition: 0.4s;
   border: none;
 }
@@ -421,8 +503,8 @@
   border-bottom: 1px solid #fff;
 }
 
-.about-texts h1 {
-  color: #ff6b00;
+.about-texts h2 {
+  color: #c75300;
   font-family: "Crete Round", serif;
   font-weight: 400;
   font-size: 3.9rem;
@@ -451,21 +533,21 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #c75300;
   padding: 12px;
   border: none;
 }
 
 .about-texts .get-resume:hover {
-  color: #ff6b00;
+  color: #c75300;
   background-color: #fff5e1;
-  border: 1px solid #ff6b00;
+  border: 1px solid #c75300;
   transition: 0.4s;
 }
 
 .about-texts .get-resume:focus {
   color: #f4f1f0;
-  background-color: #e05304;
+  background-color: #c75300;
   transition: 0.4s;
   border: none;
 }
@@ -525,7 +607,7 @@
   }
 
   85% {
-    color: #ff6b00;
+    color: #c75300;
   }
 }
 
@@ -540,7 +622,7 @@
 }
 
 .list .title i {
-  color: #ff6b00;
+  color: #c75300;
   padding-right: 14px;
   animation-name: change-color, rotate;
   animation-duration: 3s, 3s;
@@ -684,21 +766,21 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #c75300;
   padding: 12px;
   border: none;
 }
 
 .contact-form .contact-btn:hover {
-  color: #ff6b00;
+  color: #c75300;
   background-color: #fff5e1;
-  border: 1px solid #ff6b00;
+  border: 1px solid #c75300;
   transition: 0.4s;
 }
 
 .contact-form .contact-btn:focus {
   color: #f4f1f0;
-  background-color: #e05304;
+  background-color: #c75300;
   transition: 0.4s;
   border: none;
 }
@@ -707,38 +789,6 @@
   color: #5b5957;
   background-color: #f4f1f0;
   border: none;
-}
-
-.footer-icons-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 72px;
-  border-top: 1px solid #dfe1e6;
-  margin-bottom: 8px;
-}
-
-.footer-icons {
-  color: #505f79;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 15px 0 13px 0;
-  height: 40px;
-  width: 200px;
-}
-
-.footer-icons-container::after {
-  content: "";
-  position: relative;
-  background-color: #0d151e;
-  height: 5px;
-  border-radius: 10px;
-  width: 134px;
 }
 
 @media only screen and (min-width: 667px) {
@@ -816,7 +866,16 @@
   }
 
   .nav li {
-    transition: transform 0.5s;
+    transition: transform 0.3s;
+  }
+
+  .nav li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav li a:hover {
+    filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
   }
 
   .nav li:hover {
@@ -824,7 +883,7 @@
   }
 
   .nav ul {
-    color: white;
+    color: #fff;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 15px;
@@ -877,7 +936,7 @@
   }
 
   .title h1 {
-    color: #ff6b00;
+    color: #c75300;
     font-family: "Crete Round", serif;
     font-weight: 400;
     font-size: 72px;
@@ -1063,7 +1122,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card2.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0.3), hsl(20 0% 0% / 0.4) 5%, hsl(0 0% 0% / 1)), url(images/card2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1077,7 +1136,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card3.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0.3), hsl(0 0% 0% / 0.4) 5%, hsl(0 0% 0% / 1)), url(images/card3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1091,7 +1150,7 @@
     height: 435px;
     width: 100%;
     padding: 0;
-    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.2) 35%, hsl(0 0% 0% / 1)), url(images/card1.png);
+    background-image: linear-gradient(hsl(0 0% 0% / 0.3), hsl(20 0% 0% / 0.4) 5%, hsl(0 0% 0% / 1)), url(images/card4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1110,7 +1169,7 @@
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-    background-color: #ff6b00;
+    background-color: #c75300;
     display: block;
     display: flex;
     padding: 0;
@@ -1122,15 +1181,15 @@
   .button:hover {
     width: 99%;
     height: 99%;
-    color: #ff6b00;
+    color: #c75300;
     background-color: #fff5e1;
-    border: 1px solid #ff6b00;
+    border: 1px solid #c75300;
     transition: 0.4s;
   }
 
   .button:focus {
     color: #f4f1f0;
-    background-color: #e05304;
+    background-color: #c75300;
     transition: 0.4s;
     border: none;
   }
@@ -1165,7 +1224,7 @@
     margin-bottom: 0;
   }
 
-  .about-texts h1 {
+  .about-texts h2 {
     margin-bottom: 0;
   }
 
