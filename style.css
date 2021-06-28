@@ -141,17 +141,21 @@
   color: #dbd8d7;
 }
 
-.btn a:hover {
-  color: #c75300;
-}
-
 .icon-links li a {
   color: #dbd8d7;
+}
+
+.footer-icons li a {
+  color: #505f79;
 }
 
 .nav ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+.btn a:hover {
+  color: #c75300;
 }
 
 .nav li {
@@ -177,10 +181,6 @@
 
 .footer-icons li:hover {
   transform: scale(1.25);
-}
-
-.footer-icons li a {
-  color: #505f79;
 }
 
 .btn {
@@ -278,7 +278,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: #3C3A39;
+  background-color: #3c3A39;
   z-index: 1;
   transform: translateY(-100%);
   transition: transform 0.2s;
@@ -295,9 +295,8 @@
 .menuLink {
   display: inline;
   font-size: 26px;
-  color: #FFF5E1;
+  color: #fff5e1;
   text-decoration: none;
-  font-size: 85 vw;
 }
 
 .menuLink:hover {
