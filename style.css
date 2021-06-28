@@ -242,6 +242,23 @@
   transition-timing-function: ease-in-out;
 }
 
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav li {
+  transition: transform 0.3s;
+}
+
+.nav li a:hover {
+  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
+}
+
+.nav li:hover {
+  transform: scale(1.15);
+}
+
 .footer-icons-container {
   width: 100%;
   display: flex;
@@ -277,6 +294,10 @@
   transform: scale(1.25);
 }
 
+.footer-icons li a {
+  color: #505f79;
+}
+
 .footer-icons li a:hover {
   filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
@@ -292,23 +313,6 @@
 
 /* mobile menu responsive */
 
-.nav ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav li {
-  transition: transform 0.3s;
-}
-
-.nav li a:hover {
-  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
-}
-
-.nav li:hover {
-  transform: scale(1.15);
-}
-
 .btn {
   position: fixed;
   z-index: 100;
@@ -319,7 +323,6 @@
   color: #dbd8d7;
   background-color: transparent;
   text-decoration: none;
-  border: none;
   transition: 0.3s;
 }
 
@@ -330,6 +333,31 @@
 
 .btn .xIcon:hover {
   color: #c75300;
+}
+
+.icon-links {
+  width: 200px;
+  height: 0;
+  color: #dbd8d7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+}
+
+.icon-links li:hover {
+  transform: scale(1.25);
+}
+
+.icon-links li a:hover {
+  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
+}
+
+.card-links a {
+  text-decoration: none;
+  color: white;
 }
 
 .links1 {
@@ -371,15 +399,6 @@
   text-decoration: blueviolet;
 }
 
-.card-links a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer-icons li a {
-  color: #505f79;
-}
-
 .icon-links li a {
   color: #dbd8d7;
 }
@@ -400,26 +419,6 @@
 
 .desk-ul {
   display: none;
-}
-
-.icon-links {
-  width: 200px;
-  height: 0;
-  color: #dbd8d7;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  list-style-type: none;
-}
-
-.icon-links li:hover {
-  transform: scale(1.25);
-}
-
-.icon-links li a:hover {
-  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
 
 .works {
