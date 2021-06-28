@@ -278,7 +278,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: #3c3A39;
+  background-color: #3c3a39;
   z-index: 1;
   transform: translateY(-100%);
   transition: transform 0.2s;
