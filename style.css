@@ -114,8 +114,54 @@
   transform: scale(1.15);
 }
 
-.nav li{
+.iconLinks li {
   transition: transform 0.3s;
+}
+
+.cardTagGroup {
+  padding: 4px 16px 22px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  list-style-type: none;
+}
+
+.nav li {
+  transition: transform 0.3s;
+}
+
+.footerIcons {
+  color: #505f79;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 15px 0 13px 0;
+  height: 40px;
+  width: 200px;
+}
+
+.footerIcons li a {
+  color: #505f79;
+}
+
+.footerIcons li {
+  transition: 0.3s;
+}
+
+.footerIcons li:hover {
+  transform: scale(1.25);
+}
+
+.footerIcons li a:hover {
+  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
 
 .nav li:hover {
@@ -126,8 +172,6 @@
 .nav {
   display: none;
 }
-
-
 
 .headLine {
   display: flex;
@@ -186,6 +230,24 @@
   transition: transform 0.5s;
 }
 
+.aboutHead {
+  width: 85vw;
+  margin-top: 120px;
+  margin-bottom: 130px;
+  height: 560px;
+  border-bottom: 1px solid #fff;
+}
+
+.aboutHead h1 {
+  color: #ff6b00;
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-size: 72px;
+  letter-spacing: 0.37px;
+  line-height: 81.5px;
+  margin-bottom: 15px;
+}
+
 .title h1:hover {
   transform: skew(25deg);
 }
@@ -211,6 +273,16 @@
 
 .deskTitleP {
   display: none;
+}
+
+.modal-tags li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #3c3a39;
+  padding: 10px 12px;
+  border: 1px solid #979493;
 }
 
 .iconLinks {
@@ -558,20 +630,6 @@
   line-height: 24px;
 }
 
-.cardTagGroup {
-  padding: 4px 16px 22px 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: white;
-  list-style-type: none;
-}
-
 .cardTagGroup li {
   margin-right: 12px;
   padding: 10px 12px;
@@ -630,24 +688,6 @@
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 410px;
-}
-
-.aboutHead {
-  width: 85vw;
-  margin-top: 120px;
-  margin-bottom: 130px;
-  height: 560px;
-  border-bottom: 1px solid #fff;
-}
-
-.aboutHead h1 {
-  color: #ff6b00;
-  font-family: "Crete Round", serif;
-  font-weight: 400;
-  font-size: 72px;
-  letter-spacing: 0.37px;
-  line-height: 81.5px;
-  margin-bottom: 15px;
 }
 
 .aboutHead p {
@@ -911,34 +951,6 @@
   height: 72px;
   border-top: 1px solid #dfe1e6;
   margin-bottom: 8px;
-}
-
-.footerIcons {
-  color: #505f79;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 15px 0 13px 0;
-  height: 40px;
-  width: 200px;
-}
-
-.footerIcons li a {
-  color: #505f79;
-}
-
-.footerIcons li {
-  transition: 0.3s;
-}
-
-.footerIcons li:hover {
-  transform: scale(1.25);
-}
-
-.footerIcons li a:hover {
-  filter: invert(43%) sepia(53%) saturate(2493%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
 
 .footerIconsContainer::after {

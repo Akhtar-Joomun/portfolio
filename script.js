@@ -95,86 +95,83 @@ contactBtn.addEventListener('click', (event) => {
   }
 });
 
-let allCards = [
+const allCards = [
   {
     id: 1,
-    title: "Profesional Art Printing Data",
+    title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    list: ["html", "bootstrap", "Ruby"],
-    button: "See Project"
+    list: ['html', 'bootstrap', 'Ruby'],
+    button: 'See Project',
   }, 
 
   {
     id: 2,
-    title: "Profesional Art Printing Data",
+    title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    list: ["html", "bootstrap", "Ruby"],
-    button: "See Project"
+    list: ['html', 'bootstrap', 'Ruby'],
+    button: 'See Project',
   }, 
 
   {
     id: 3,
-    title: "Profesional Art Printing Data",
+    title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    list: ["html", "bootstrap", "Ruby"],
-    button: "See Project"
+    list: ['html', 'bootstrap', 'Ruby'],
+    button: 'See Project',
   }, 
 
   {
     id: 4,
-    title: "Profesional Art Printing Data",
+    title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    list: ["html", "bootstrap", "Ruby"],
-    button: "See Project"
+    list: ['html', 'bootstrap', 'Ruby'],
+    button: 'See Project',
   }, 
 
   {
     id: 5,
-    title: "Profesional Art Printing Data",
+    title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    list: ["html", "bootstrap", "Ruby"],
-    button: "See Project"
+    list: ['html', 'bootstrap', 'Ruby'],
+    button: 'See Project',
   }, 
 
   {
     id: 6,
-    title: "Profesional Art Printing Data",
+    title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    list: ["html", "bootstrap", "Ruby"],
-    button: "See Project"
-  }, 
-]
+    list: ['html', 'bootstrap', 'Ruby'],
+    button: 'See Project',
+  }
+];
 
-function languages(languages){
-  return `${languages.map(function(language){
-      return `<li>${language}</li>`
-  }).join('')}`
-}
+  function languages(languages){
+    return `${languages.map(function(language){
+    return `<li>${language}</li>`;
+    }).join('')}`;
+  }
 
-
-function workTemplate(work) {
-  return `
-  <li class="card">
-  <ul class="info">
-    <li>
-      <h3>${work.title}</h3>
-    </li>
-    <li>
-      <p>${work.paragraph}</p>
-    </li>
-  </ul>
-  <ul class="cardTagGroup">
-  ${languages(work.list)}
-  </ul>
-  <div class="bottomBtn">
-    <button class="cardButton" type="button">
-      See Project
-    </button>
-  </div>
-</li>
- `
-}
-
-
+  function workTemplate(work) {
+    return `
+    <li class="card">
+    <ul class="info">
+      <li>
+        <h3>${work.title}</h3>
+      </li>
+      <li>
+        <p>${work.paragraph}</p>
+      </li>
+    </ul>
+    <ul class="cardTagGroup">
+    ${languages(work.list)}
+    </ul>
+    <div class="bottomBtn">
+      <button class="cardButton" type="button">
+        See Project
+      </button>
+    </div>
+  </li>
+  `;
+  }
 
 document.getElementById('myCards').innerHTML = `${allCards.map(workTemplate).join('')}`;
