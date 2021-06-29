@@ -13,6 +13,7 @@ const link2 = document.querySelector('.btn-link2');
 const link3 = document.querySelector('.btn-link3');
 const modalOpenBtn = document.querySelector('.projectBtn');
 const modalCloseBtn = document.querySelector('#close-modal-btn');
+const aBtn = document.querySelectorAll('.bottomBtn');
 
 function openMenu() {
   menu.style.visibility = 'visible';
@@ -42,6 +43,7 @@ function closeModal() {
 
 modalOpenBtn.addEventListener('click', openModal);
 modalCloseBtn.addEventListener('click', closeModal);
+aBtn.addEventListener('click', openModal);
 
 const form = document.querySelector('.contactForm');
 const nameInput = form.elements.user_name;
@@ -102,7 +104,7 @@ const allCards = [
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
-  }, 
+  },
 
   {
     id: 2,
@@ -145,11 +147,11 @@ const allCards = [
   }
 ];
 
-  function languages(languages){
+  function languages (languages) {
     return `${languages.map(function(language){
-    return `<li>${language}</li>`;
-    }).join('')}`;
-  }
+return `<li>${language}</li>`;
+}).join('')}`;
+}
 
   function workTemplate(work) {
     return `
