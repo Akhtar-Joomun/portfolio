@@ -112,7 +112,7 @@ const allCards = [
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
-  }, 
+  },
 
   {
     id: 3,
@@ -120,7 +120,7 @@ const allCards = [
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
-  }, 
+  },
 
   {
     id: 4,
@@ -128,7 +128,7 @@ const allCards = [
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
-  }, 
+  },
 
   {
     id: 5,
@@ -136,7 +136,7 @@ const allCards = [
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
-  }, 
+  },
 
   {
     id: 6,
@@ -144,17 +144,17 @@ const allCards = [
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
-  }
+  },
 ];
 
-  function languages (languages) {
-    return `${languages.map(function(language){
-return `<li>${language}</li>`;
-}).join('')}`;
+function languages(languages) {
+  return `${languages.map (function(language) {
+    return `<li>${language}</li>`;
+  }).join('')}`;
 }
 
-  function workTemplate(work) {
-    return `
+function workTemplate(work) {
+  return `
     <li class="card">
     <ul class="info">
       <li>
@@ -174,6 +174,6 @@ return `<li>${language}</li>`;
     </div>
   </li>
   `;
-  }
+}
 
 document.getElementById('myCards').innerHTML = `${allCards.map(workTemplate).join('')}`;
