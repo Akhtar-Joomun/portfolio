@@ -148,7 +148,7 @@ const allCards = [
 ];
 
 function languages(languages) {
-  return `${languages.map (function(language) {
+  return `${languages.map(function (language) {
     return `<li>${language}</li>`;
   }).join('')}`;
 }
