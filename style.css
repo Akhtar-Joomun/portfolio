@@ -553,6 +553,7 @@
 }
 
 .modal-btn {
+  text-decoration: none;
   font-family: 'Inter', sans-serif;
   color: white;
   font-weight: 700;

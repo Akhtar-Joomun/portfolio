@@ -12,8 +12,14 @@ const link = document.querySelector('.btn-link');
 const link2 = document.querySelector('.btn-link2');
 const link3 = document.querySelector('.btn-link3');
 const modalOpenBtn = document.querySelector('.projectBtn');
-const modalCloseBtn = document.querySelector('#close-modal-btn');
-/* const cardButton = document.querySelectorAll('.cardButton'); */
+let modalCloseBtn = document.querySelector('#close-modal-btn');
+const modalTextM = document.querySelector(".modal-text-mobile");
+const modalTextD = document.querySelector(".modal-text-desk");
+const modalImg = document.querySelector(".modalm-img");
+const modalTitle = document.querySelector(".modalm-title");
+const modalTags = document.querySelector('.modal-tags');
+const modalSource = document.getElementById('source');
+const modalLive = document.getElementById('live');
 
 function openMenu() {
   menu.style.visibility = 'visible';
@@ -46,51 +52,69 @@ modalCloseBtn.addEventListener('click', closeModal);
 
 const allCards = [
   {
-    id: 1,
+    id: 0,
+    img: 'images/details.png',
     title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
+    live: '#',
+    source: '#',
+  },
+
+  {
+    id: 1,
+    img: 'images/details.png',
+    title: 'Profesional Art Printing Data',
+    paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    list: ['html', 'bootstrap', 'Ruby'],
+    button: 'See Project',
+    live: '#',
+    source: '#',
   },
 
   {
     id: 2,
+    img: 'images/details.png',
     title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
+    live: '#',
+    source: '#',
   },
 
   {
     id: 3,
+    img: 'images/details.png',
     title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
+    live: '#',
+    source: '#',
   },
 
   {
     id: 4,
+    img: 'images/details.png',
     title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
+    live: '#',
+    source: '#',
   },
 
   {
     id: 5,
+    img: 'images/details.png',
     title: 'Profesional Art Printing Data',
     paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
-  },
-
-  {
-    id: 6,
-    title: 'Profesional Art Printing Data',
-    paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    list: ['html', 'bootstrap', 'Ruby'],
-    button: 'See Project',
+    live: '#',
+    source: '#',
   },
 ];
 
@@ -113,7 +137,7 @@ function workTemplate(work) {
     ${languages(work.list)}
     </ul>
     <div class="bottomBtn">
-      <button class="cardButton" type="button">
+      <button class="cardButton" onclick="customModal(1)" id="${allCards.id}" type="button">
         See Project
       </button>
     </div>
@@ -123,3 +147,28 @@ function workTemplate(work) {
 
 document.getElementById('myCards').innerHTML = `${allCards.map(workTemplate).join('')}`;
 document.getElementById('myCardsDesk').innerHTML = `${allCards.map(workTemplate).join('')}`;
+
+function customModal(id) {
+  const projects = allCards[id];
+  modalTitle.textContent = projects.title;
+  modalTextM.textContent = projects.paragraph;
+  modalTextD.textContent = projects.paragraph;
+  while (modalTags.hasChildNodes()) {
+    modalTags.removeChild(modalTags.lastChild);
+  }
+  for (let i = 0; i < projects.list.length; i += 1) {
+    const li = document.createElement('li');
+    li.textContent = projects.list[i];
+    modalTags.appendChild(li);
+  }
+  modalCloseBtn = document.createElement('i');
+  modalCloseBtn.classList.add('fas');
+  modalCloseBtn.classList.add('fa-times');
+  modalCloseBtn.classList.add('fa-lg');
+  modalTitle.appendChild(modalCloseBtn);
+  modalCloseBtn.addEventListener('click', closeModal);
+  modalSource.href = projects.source;
+  modalLive.href = projects.live;
+  modalImg.style.backgroundImage = projects.img;
+  openModal();
+}
