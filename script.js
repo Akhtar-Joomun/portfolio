@@ -43,7 +43,7 @@ function closeModal() {
 
 modalOpenBtn.addEventListener('click', openModal);
 modalCloseBtn.addEventListener('click', closeModal);
-aBtn.addEventListener('click', openModal);
+
 
 const form = document.querySelector('.contactForm');
 const nameInput = form.elements.user_name;
@@ -148,7 +148,7 @@ const allCards = [
 ];
 
 function languages(languages) {
-  return `${languages.map(function (language) {
+  return `${languages.map(function(language) {
     return `<li>${language}</li>`;
   }).join('')}`;
 }
