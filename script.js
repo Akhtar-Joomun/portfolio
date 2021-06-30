@@ -13,10 +13,10 @@ const link2 = document.querySelector('.btn-link2');
 const link3 = document.querySelector('.btn-link3');
 const modalOpenBtn = document.querySelector('.projectBtn');
 let modalCloseBtn = document.querySelector('#close-modal-btn');
-const modalTextM = document.querySelector(".modal-text-mobile");
-const modalTextD = document.querySelector(".modal-text-desk");
-const modalImg = document.querySelector(".modalm-img");
-const modalTitle = document.querySelector(".modalm-title");
+const modalTextM = document.querySelector('.modal-text-mobile');
+const modalTextD = document.querySelector('.modal-text-desk');
+const modalImg = document.querySelector('.modalm-img');
+const modalTitle = document.querySelector('.modalm-title');
 const modalTags = document.querySelector('.modal-tags');
 const modalSource = document.getElementById('source');
 const modalLive = document.getElementById('live');
@@ -134,7 +134,7 @@ function workTemplate(work) {
     ${languages(work.list)}
     </ul>
     <div class="bottomBtn">
-      <button class="cardButton" onclick="customModal(` + work.id + `)" type="button">
+      <button class="cardButton" onclick=customModal(${work.id}) type="button">
         See Project
       </button>
     </div>
@@ -170,9 +170,11 @@ function customModal(id) {
   openModal();
 }
 
-function principalModal(){
-  customModal(0)
+function principalModal() {
+  customModal(0);
 }
 
 modalOpenBtn.addEventListener('click', principalModal);
 modalCloseBtn.addEventListener('click', closeModal);
+
+<button class="cardButton" onclick="customModal(` + work.id + `)" type="button"></button>
