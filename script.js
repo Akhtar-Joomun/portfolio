@@ -43,7 +43,6 @@ function closeModal() {
 modalOpenBtn.addEventListener('click', openModal);
 modalCloseBtn.addEventListener('click', closeModal);
 
-
 const form = document.querySelector('.contactForm');
 const nameInput = form.elements.user_name;
 const email = form.elements.user_email;
