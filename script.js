@@ -13,7 +13,6 @@ const link2 = document.querySelector('.btn-link2');
 const link3 = document.querySelector('.btn-link3');
 const modalOpenBtn = document.querySelector('.projectBtn');
 const modalCloseBtn = document.querySelector('#close-modal-btn');
-const aBtn = document.querySelectorAll('.bottomBtn');
 
 function openMenu() {
   menu.style.visibility = 'visible';
