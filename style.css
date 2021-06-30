@@ -67,6 +67,15 @@
   width: 90%;
 }
 
+#close-modal-btn {
+  transition: transform 0.2s;
+}
+
+#close-modal-btn:hover {
+  color: #c75300;
+  transform: scale(1.1);
+}
+
 .close-btn {
   background-color: transparent;
   padding: 12px;
