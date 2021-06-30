@@ -47,9 +47,6 @@ function closeModal() {
   main.classList.remove('active');
 }
 
-modalOpenBtn.addEventListener('click', openModal);
-modalCloseBtn.addEventListener('click', closeModal);
-
 const allCards = [
   {
     id: 0,
@@ -137,7 +134,7 @@ function workTemplate(work) {
     ${languages(work.list)}
     </ul>
     <div class="bottomBtn">
-      <button class="cardButton" onclick="customModal(1)" id="${allCards.id}" type="button">
+      <button class="cardButton" onclick="customModal(` + work.id + `)" type="button">
         See Project
       </button>
     </div>
@@ -172,3 +169,10 @@ function customModal(id) {
   modalImg.style.backgroundImage = projects.img;
   openModal();
 }
+
+function principalModal(){
+  customModal(0)
+}
+
+modalOpenBtn.addEventListener('click', principalModal);
+modalCloseBtn.addEventListener('click', closeModal);
