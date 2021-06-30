@@ -148,8 +148,8 @@ const allCards = [
 ];
 
 function languages(languages) {
-  return `${languages.map((language) => { return `<li>${language}</li>`;
-  }).join('')}`;
+  return `${languages.has((language) => { return `<li>${language}</li>`;
+}).join('')}`;
 }
 
 function workTemplate(work) {
