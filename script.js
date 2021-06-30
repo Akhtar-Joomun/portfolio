@@ -176,5 +176,3 @@ function principalModal() {
 
 modalOpenBtn.addEventListener('click', principalModal);
 modalCloseBtn.addEventListener('click', closeModal);
-
-<button class="cardButton" onclick="customModal(` + work.id + `)" type="button"></button>
