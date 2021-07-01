@@ -182,3 +182,55 @@ function principalModal() {
 
 modalOpenBtn.addEventListener('click', principalModal);
 modalCloseBtn.addEventListener('click', closeModal);
+
+const form = document.querySelector('.contactForm');
+const nameInput = form.elements.user_name;
+const email = form.elements.user_email;
+const textInput = form.elements.user_message;
+const emailError = document.querySelector('.error');
+const contactBtn = document.querySelector('.contactBtn');
+
+function saveLocal() {
+  const userName = document.querySelector('#name').value;
+  const emailAddress = document.querySelector('#mail').value;
+  const text = document.querySelector('#msg').value;
+
+  const data = {
+    name: userName,
+    userEmail: emailAddress,
+    userText: text,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+}
+
+function getData() {
+  const dataGet = localStorage.getItem('data');
+  if (dataGet) {
+    const dataParse = JSON.parse(dataGet);
+    nameInput.value = dataParse.name;
+    email.value = dataParse.userEmail;
+    textInput.value = dataParse.userText;
+  }
+}
+
+getData();
+
+form.addEventListener('input', () => {
+  saveLocal();
+});
+
+email.addEventListener('input', () => {
+  if (!email.validity.patternMismatch) {
+    emailError.classList.remove('active');
+  }
+});
+
+contactBtn.addEventListener('click', (event) => {
+  if (email.validity.patternMismatch) {
+    emailError.classList.add('active');
+    emailError.textContent = 'Email Address should use lowercase only.';
+    event.preventDefault();
+  } else {
+    emailError.textContent = '';
+  }
+});
