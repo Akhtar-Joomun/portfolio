@@ -517,6 +517,12 @@
   color: #67798e;
   margin-top: 10px;
   margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.modalm-title i:hover {
+  color: #e05304;
+  transform: scale(1.15);
 }
 
 .modal-tags {
@@ -909,7 +915,7 @@
   margin-left: 0;
   font-family: "Inter", sans-serif;
   padding: 12px 12px 12px 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   color: rgb(243, 38, 38);
   margin-bottom: 5px;
@@ -1270,7 +1276,6 @@
 
   .modal-tags {
     width: 288px;
-    margin-bottom: 50px;
   }
 
   .card-contain {

@@ -234,3 +234,4 @@ contactBtn.addEventListener('click', (event) => {
     emailError.textContent = '';
   }
 });
+
