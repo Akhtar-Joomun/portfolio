@@ -500,6 +500,9 @@
   justify-content: space-between;
   height: 82px;
   margin-bottom: 5px;
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 .modalm-title h2 {
@@ -526,11 +529,10 @@
 }
 
 .modalm-img {
-  height: 220px;
+  height: 37vh;
   background-image: url(images/details_mob.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 24px;
 }
 
 .modal-text-mobile {
@@ -560,7 +562,7 @@
   font-size: 17px;
   line-height: 24px;
   background-color: #ff6b00;
-  padding: 12px;
+  padding: 0.6rem;
   border: none;
 }
 
@@ -1006,8 +1008,8 @@
   }
 
   .modalm-img {
-    height: 448px;
     background-image: url(images/details.png);
+    height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1256,12 +1258,14 @@
     top: 15%;
     margin: 0 auto;
     width: 80vw;
-    height: 631px;
+    height: 100vh;
     margin-top: -7%;
   }
 
   .modalm-title {
     height: auto;
+    font-family: "Crete Round", serif;
+    font-weight: 400;
   }
 
   .modal-tags {
@@ -1276,9 +1280,8 @@
   }
 
   .modalm-img {
-    width: 60%;
-    margin-bottom: 0;
-    height: 448px;
+    width: 47vw;
+    height: 72vh;
     background-image: url(images/details.png);
     background-size: cover;
   }
@@ -1307,6 +1310,7 @@
 
   .modal-buttons {
     width: 298px;
+    margin-bottom: 5vh;
   }
 
   .containerDesk {

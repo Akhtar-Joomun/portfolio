@@ -51,12 +51,13 @@ const allCards = [
   {
     id: 0,
     img: 'images/details.png',
-    title: 'Profesional Art Printing Data',
-    paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Multi-Post Stories',
+    paragraph: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     list: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
     live: '#',
     source: '#',
+    para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
   },
 
   {
@@ -68,6 +69,7 @@ const allCards = [
     button: 'See Project',
     live: '#',
     source: '#',
+    para: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
   },
 
   {
@@ -79,6 +81,7 @@ const allCards = [
     button: 'See Project',
     live: '#',
     source: '#',
+    para: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
   },
 
   {
@@ -90,6 +93,7 @@ const allCards = [
     button: 'See Project',
     live: '#',
     source: '#',
+    para: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.",
   },
 
   {
@@ -101,6 +105,7 @@ const allCards = [
     button: 'See Project',
     live: '#',
     source: '#',
+    para: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
   },
 
   {
@@ -112,6 +117,7 @@ const allCards = [
     button: 'See Project',
     live: '#',
     source: '#',
+    para: "But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
   },
 ];
 
@@ -149,7 +155,7 @@ function customModal(id) {
   const projects = allCards[id];
   modalTitle.textContent = projects.title;
   modalTextM.textContent = projects.paragraph;
-  modalTextD.textContent = projects.paragraph;
+  modalTextD.textContent = projects.para;
   while (modalTags.hasChildNodes()) {
     modalTags.removeChild(modalTags.lastChild);
   }
