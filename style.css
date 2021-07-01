@@ -476,7 +476,7 @@
 }
 
 .modal-mobile {
-  max-height: calc(100vh - 20px);
+  max-height: calc(100vh - 4.3vw);
   transform: scale(0);
   transition: 200ms ease-in-out;
   overflow-y: auto;
@@ -491,7 +491,7 @@
 }
 
 .modal-mobile.active {
-  transform: scale(0.65);
+  transform: scale(1);
 }
 
 .modalm-title {
@@ -1257,6 +1257,7 @@
     margin: 0 auto;
     width: 80vw;
     height: 631px;
+    margin-top: -7%;
   }
 
   .modalm-title {
