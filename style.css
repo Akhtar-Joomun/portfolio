@@ -68,7 +68,7 @@
 }
 
 #close-modal-btn {
-  transition: transform 0.2s;
+  transition: transform 0.3s;
 }
 
 #close-modal-btn:hover {
@@ -86,8 +86,8 @@
 }
 
 .close-btn:hover {
-  color: #c75300;
-  transform: scale(1.15);
+  color: #e96608;
+  transform: scale(1.2);
 }
 
 .mobile-list {
@@ -105,6 +105,7 @@
   padding-bottom: 5px;
   margin-bottom: 24px;
   border-bottom: 1px solid #6f6c6b;
+  transition: transform 0.3s;
 }
 
 .mobile-list a {
@@ -517,6 +518,16 @@
   color: #67798e;
   margin-top: 10px;
   margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.modal-btn i {
+  margin-left: 12px;
+}
+
+.modalm-title i:hover {
+  color: #e05304;
+  transform: scale(1.15);
 }
 
 .modal-tags {
@@ -583,10 +594,6 @@
   color: #5b5957;
   background-color: #f4f1f0;
   border: none;
-}
-
-.modal-btn i {
-  margin-left: 12px;
 }
 
 #overlay {
@@ -860,7 +867,7 @@
 }
 
 .smallInput input {
-  height: 18px;
+  height: 17px;
   width: 90%;
   border: none;
 }
@@ -909,7 +916,7 @@
   margin-left: 0;
   font-family: "Inter", sans-serif;
   padding: 12px 12px 12px 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   color: rgb(243, 38, 38);
   margin-bottom: 5px;
@@ -1270,7 +1277,6 @@
 
   .modal-tags {
     width: 288px;
-    margin-bottom: 50px;
   }
 
   .card-contain {
