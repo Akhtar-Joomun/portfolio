@@ -108,14 +108,6 @@
   transition: transform 0.3s;
 }
 
-.mobile-list li:hover {
-  transform: scale(1.1);
-}
-
-.mobile-list li a:hover {
-  color: #e96608;
-}
-
 .mobile-list a {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
