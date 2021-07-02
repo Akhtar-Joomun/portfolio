@@ -154,7 +154,7 @@ document.getElementById('myCardsDesk').innerHTML = `${allCards.map(workTemplate)
 function customModal(id) {
   const projects = allCards[id];
   modalTitle.textContent = projects.title;
-  modalTextM.textContent = projects.paragraph;
+  modalTextM.textContent = projects.para;
   modalTextD.textContent = projects.para;
   while (modalTags.hasChildNodes()) {
     modalTags.removeChild(modalTags.lastChild);
@@ -180,8 +180,8 @@ function principalModal() {
   customModal(0);
 }
 
-modalOpenBtn.addEventListener('click', principalModal);
-modalCloseBtn.addEventListener('click', closeModal);
+modalOpenBtn.addEventListener('click', closeModal);
+modalCloseBtn.addEventListener('click', principalModal);
 
 const form = document.querySelector('.contactForm');
 const nameInput = form.elements.user_name;
