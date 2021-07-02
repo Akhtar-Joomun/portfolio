@@ -68,7 +68,7 @@
 }
 
 #close-modal-btn {
-  transition: transform 0.2s;
+  transition: transform 0.3s;
 }
 
 #close-modal-btn:hover {
@@ -86,8 +86,8 @@
 }
 
 .close-btn:hover {
-  color: #c75300;
-  transform: scale(1.15);
+  color: #e96608;
+  transform: scale(1.14);
 }
 
 .mobile-list {
@@ -860,7 +860,7 @@
 }
 
 .smallInput input {
-  height: 18px;
+  height: 17px;
   width: 90%;
   border: none;
 }
